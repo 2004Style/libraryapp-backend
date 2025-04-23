@@ -1,7 +1,9 @@
 package com.lectorium.repository;
 
+// import org.springframework.data.jpa.repository.JpaRepository;
+
 import com.lectorium.model.Publisher;
 
-public interface IPublisherRepo {
-    public Publisher save(Publisher publisher);
+public interface IPublisherRepo extends IGenericRepo<Publisher, Integer> {
+    // public Publisher save(Publisher publisher);
 }
